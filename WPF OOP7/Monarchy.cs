@@ -19,7 +19,7 @@ namespace WPF_OOP7
 
         public override string ToString()
         {
-            return Name + King;
+            return Name + "   King : " +  King;
         }
 
 

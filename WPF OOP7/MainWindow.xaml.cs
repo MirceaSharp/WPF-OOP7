@@ -33,6 +33,19 @@ namespace WPF_OOP7
                 lbShow.Items.Add(monarchyCountry).ToString();
 
             }
+            else if(rdRepublic.IsChecked ==true)
+            {
+                Republic myRepublic= new Republic(txtCountry.Text, txtCapital.Text, txtHeadofState.Text);
+                lbShow.Items.Add(myRepublic).ToString();
+
+
+            }
+            else if(rdOther.IsChecked == true)
+            {
+
+                Country myCountry = new Country(txtCountry.Text, txtCapital.Text);
+                lbShow.Items.Add(myCountry).ToString();
+            }
         }
     }
 }

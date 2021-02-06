@@ -24,12 +24,19 @@ namespace WPF_OOP7
 
         public override string ToString()
         {
-            return base.ToString();
+            return Name + Capital;
         }
 
         public override bool Equals(object obj)
         {
-            return base.Equals(obj);
+            if (obj == null || this.GetType() != obj.GetType())
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
     }
 }
